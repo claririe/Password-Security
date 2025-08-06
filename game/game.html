@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Password Security - Game</title>
+  <link href="game.css" rel="stylesheet" type="text/css"/>
+  <link href="../universal/layout.css" rel="stylesheet" type="text/css"/>
+  <link href="../universal/transition.css" rel="stylesheet" type="text/css"/>
+  <link rel="icon" type="image/x-icon" href="../images/logo.png">
+  <script src="https://kit.fontawesome.com/397a9aff16.js" crossorigin="anonymous"></script>
+  <link href="../universal/modal.css" rel="stylesheet" type="text/css" />
+</head>
+
+<!-- chatbox
+-->  
+  
+<body>
+
+  <!-- Modal -->
+  <button id="myBtn">Open Tutorial</button>
+  <div id="myModal" class="modal"> 
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="flex">
+        <p>Click "Click Here To Start" to start playing the game. Your fish inventory is shown on the top left, and your current rod is located under it. The default rod is wooden.</p>
+        <img src="../images/tutorial1.png">
+      </div>
+      
+      <div class="flex">    
+        <p>You will be given two different passwords, choose the one that is stronger to gain fish.</p>
+        <img src="../images/tutorial2.png">
+      </div>
+      <div class="flex">
+        <p>Rods can be bought for a certain amount of fish, they will increase the amount of fish earned for each correct answer.</p>
+        <img src="../images/tutorial3.png">
+      </div>
+    </div>
+        <pre>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        
+      </pre>
+  </div>
+
+  <!-- Content -->
+  <div class="content">
+    
+    <div class="menu"> <!-- menu -->
+      <div class="shop">
+        <img src="../images/shop.png" width="10%">
+        <p>Rod Shop</p>
+      </div>
+
+      <div class="rods">
+        <div class="rod-card">
+          <p>Steel Rod (10/Answer)</p>
+          <img src="../images/steel.png" width="100%">
+          <button id="steel">10 <img src="../images/fish.png"></button>
+        </div>
+        <div class="rod-card">
+          <p>Gold Rod (100/Answer)</p>
+          <img src="../images/gold.png" width="100%">
+          <button id="gold">200 <img src="../images/fish.png"></button>
+        </div>
+        <div class="rod-card"> 
+          <p>Ruby Rod (1000/Answer)</p>
+          <img src="../images/ruby.png" width="100%">
+          <button id="ruby">3000 <img src="../images/fish.png"></button>
+        </div>
+      </div>
+    </div> <!-- end of menu -->
+
+    <div class="game"> <!-- game -->
+
+      <div class="fishDisplay"> <!-- Fish Score Display -->
+        <p id="score">0</p>
+        <img src="../images/fish.png"">
+      </div>
+
+      <div class="flexbox"> <!-- Rod Display & Buttons -->
+        <div class="rodDisplay">
+          <p>Current Rod</p>
+          <img id="currentRod" src="../images/wood.png">
+        </div>
+        
+        <button id="start">↓ Click Here To Start</button>
+        <div class="options">
+          <button id="opt1">Option 1</button>
+          <br>
+          <button id="opt2">Option 2</button>
+        </div>
+      </div>
+    </div> <!-- end of game -->
+  </div> <!-- end of content -->
+
+  <!-- Nav Bar-->
+  <nav class="main-menu">
+    <ul>
+        <li>
+            <a href="../index.html">
+                <i class="nav-icon fa fa-solid fa-house fa-2x"></i>
+                <span class="nav-text">
+                    Home
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="../information/info.html">
+                <i class="nav-icon fa fa-solid fa-circle-info fa-2x"></i>
+                <span class="nav-text">
+                    Information
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="../howto/howto.html">
+               <i class="nav-icon fa fa-solid fa-lock fa-2x"></i>
+                <span class="nav-text">
+                    Securing a Password
+                </span>
+            </a>
+        </li>
+        <li>
+            <a class="activepage" href="#">
+                <i class="nav-icon fa fa-solid fa-gamepad fa-2x"></i>
+                <span class="nav-text">
+                    Phishing Game
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="../cryptography/cryptography.html">
+                <i class="nav-icon fa fa-solid fa-key fa-2x"></i>
+                <span class="nav-text">
+                    Cryptography
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="../community/community.html">
+               <i class="nav-icon fa fa-solid fa-people-group fa-2x"></i>
+                <span class="nav-text">
+                    Our Community
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="../about/about.html">
+                <i class="nav-icon fa fa-solid fa-address-card fa-2x"></i>
+                <span class="nav-text">
+                   About Us
+                </span>
+            </a>
+        </li>
+  </nav>
+  <!-- Scripts -->
+  <script src="../universal/script.js"></script>
+  <script src="shop.js"></script>
+  <script src="game.js"></script>
+  <script src="../universal/modal.js"></script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+/* Top */
+.top {
+  padding-left: 120px;
+  color: #fff;
+}
+.row1 {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-top: 80px;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+.row2 {
+  font-size: 4em;
+  margin-bottom: 10px;
+  font-weight: 900;
+}
+.row3 {
+  font-size: 1em;
+  color: #eee;
+  margin-bottom: 20px;
+}
+.row4 {
+  background-color: rgba(247, 233, 160, 0.7);
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: fit-content;
+}
+
+/* Cards */
+.container{
+	position: relative;
+	display: flex;
+  padding-left: 120px;
+	align-items: center;
+	max-height: 1200px;
+	flex-wrap: wrap;
+}
+.container .card{
+	position: relative;
+	width: 280px;
+	height: 400px;
+	margin: 30px 80px 100px 0;
+	box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+	border-radius: 15px;
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	backdrop-filter: blur(5px);
+}
+.container .card .content {
+	padding: 20px;
+	text-align: center;
+}
+
+.container .card .content img {
+	transform: translateY(100px);
+	transition: 0.5s;
+}
+
+.container .card:hover .content img {
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+.container .card .content p {
+	transform: translateY(100px);
+	opacity: 0;
+	transition: 0.5s;
+}
+.container .card:hover .content p{
+	transform: translateY(0px);
+	opacity: 1;
+}
+
+
+.container .card .content img {
+  width: 80%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+.container .card .content p{
+	font-size: 0.8em;
+	color: #fff;
+	font-weight: 300;
+}
+
+.card1 {
+  background: rgba(168, 209, 231, 0.3);
+}
+
+.card2 {
+  background: rgba(247, 109, 109, 0.3);
+}
+
+.card3 {
+  background: rgba(247, 233, 160, 0.6);
+}

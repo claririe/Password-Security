@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Password Security - Cryptography</title>
+  <link href="cryptography.css" rel="stylesheet" type="text/css"/>
+  <link href="../universal/layout.css" rel="stylesheet" type="text/css"/>
+  <link href="../universal/transition.css" rel="stylesheet" type="text/css"/>
+  <link href="../universal/modal.css" rel="stylesheet" type="text/css"/>
+  <link rel="icon" type="image/x-icon" href="../images/logo.png">
+  <script src="https://kit.fontawesome.com/397a9aff16.js" crossorigin="anonymous"></script>
+</head>
+
+<!-- chatbox
+-->  
+  
+<body>
+  <!-- Modal -->
+  <button id="myBtn">Open Tutorial</button>
+  <div id="myModal" class="modal"> 
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <div class="flex">
+        <p>Caesar and Vigenere ciphers are algorithms that encode and decode messages. For Caesar, each letter in a message is shifted a number amount of places down the alphabet. Vigenere is a more complex version of Caesar where the shift key is not a number, but a word. It functions using an interlaced alphabet. Here is a picture of the Vigenere table.</p>
+        <img src="../images/vigenere.png">
+      </div>
+      
+      <div class="flex">    
+        <p>To start, select which cipher to use and choose encrypt. The shift key for Caesar must be a number, and the shift key for Vigenere must be a word. When entering the message, make sure it does not contain spaces, symbols, or numbers. After clicking submit, the encoded message will show on the right.</p>
+        <img src="../images/step1.png">
+      </div>
+      <div class="flex">
+        <p>Now that you have the encoded message, you can decode it by selecting decrypt and entering the encoded message in the text input. Make sure to use the same cipher and shift key you used originally. The original message will show on the right after clicking submit. Feel free to play around with it using different ciphers and shift keys.</p>
+        <img src="../images/step2.png">
+      </div>
+    </div>
+        <pre>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+        
+      </pre>
+  </div>
+  
+  <!-- Content -->
+  <div class="content">
+    <div id="container">
+    
+      <div id = "leftSide">
+        <p>Caesar/Vigenere Cipher</p>
+        <div id = "buttons">
+          <input class="radioInput" type="radio" name="function" id="c" value="caesar">
+          <label class="radioLabel" for="c">Caesar</label>
+          <input class="radioInput" type="radio" name="function" id="v" value="vigenere">
+          <label class="radioLabel" for="v">Vigenere</label>
+        </div>
+
+        <p>Encrypt/Decrypt</p>
+        <div id = "buttons">
+          <input class="radioInput" type="radio" name="crypt" id="r1" value="True">
+          <label class="radioLabel" for="r1">Encrypt</label>
+          <input class="radioInput" type="radio" name="crypt" id="r2" value="False">
+          <label class="radioLabel" for="r2">Decrypt</label>
+        </div>
+
+        <p>Shift Key</p>
+        <div id="shift">
+          <label for="shiftKey">Shift Key</label>
+          <input type="text" placeholder="key input" id="shiftKey">
+        </div>
+
+        <p>Text</p>
+        <div id="text">
+          <label for="textInput">Text</label>
+          <input type="text" placeholder="text input" id="textInput">
+        </div>
+      
+        <button type="button" class="inbutton" id="submit">submit</button>
+      </div> <!-- end of leftSide -->
+
+      <div id ="rightSide">
+        <p id="output">output</p>
+      </div>
+
+    </div> <!-- end of container -->
+  
+  </div>
+  <!-- Nav Bar-->
+  <nav class="main-menu">
+    <ul>
+        <li>
+            <a href="../index.html">
+                <i class="nav-icon fa fa-solid fa-house fa-2x"></i>
+                <span class="nav-text">
+                    Home
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="../information/info.html">
+                <i class="nav-icon fa fa-solid fa-circle-info fa-2x"></i>
+                <span class="nav-text">
+                    Information
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="../howto/howto.html">
+               <i class="nav-icon fa fa-solid fa-lock fa-2x"></i>
+                <span class="nav-text">
+                    Securing a Password
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="../game/game.html">
+                <i class="nav-icon fa fa-solid fa-gamepad fa-2x"></i>
+                <span class="nav-text">
+                    Phishing Game
+                </span>
+            </a>
+        </li>
+        <li>
+            <a class="activepage" href="#">
+                <i class="nav-icon fa fa-solid fa-key fa-2x"></i>
+                <span class="nav-text">
+                    Cryptography
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="../community/community.html">
+               <i class="nav-icon fa fa-solid fa-people-group fa-2x"></i>
+                <span class="nav-text">
+                    Our Community
+                </span>
+            </a>
+        </li>
+        <li>
+            <a href="../about/about.html">
+                <i class="nav-icon fa fa-solid fa-address-card fa-2x"></i>
+                <span class="nav-text">
+                   About Us
+                </span>
+            </a>
+        </li>
+  </nav>
+  <!-- Scripts -->
+  <script src="../universal/script.js"></script>
+  <script src="cryptography.js"></script>
+  <script src="../universal/modal.js"></script>
+</body>
+</html>

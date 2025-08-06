@@ -1,0 +1,96 @@
+p {
+  margin: 16px 0px 1px 0px;
+}
+
+#container {
+  padding: 20px 50px 20px 50px;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: fit-content;
+  min-width: 45%;
+  margin: 100px auto;
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*------ encrypt/decrypt, caesar/vigenere buttons -----*/
+#buttons {
+  border: 1.5px solid #374785;
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 4px;
+  padding: 5px 0px 5px 0px;
+}
+
+.radioInput {
+  display: none;
+}
+
+.radioLabel {
+  margin: 0px 5px 0px 5px;
+  padding: 5px 14px;
+  font-size: 14px;
+  border-radius: 2.5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.radioInput:checked + .radioLabel {
+  background: #A8D1E7;
+}
+
+#r1 {
+  margin-right: 10px;
+}
+
+input {
+  color: gray;
+}
+/*------ inputs (shift key & text) -----*/
+
+input {
+  border: none;
+  border-bottom: 2px solid #F76D6D;
+  margin-right: 10px;
+  padding: 10px 10px 3px 10px;
+  outline: none;
+}
+
+label[for="shiftKey"], label[for="textInput"] {
+  display: none;
+}
+
+/*------ submission -----*/
+
+#submit {
+  margin-top: 16px;
+  border: none;
+  background-color: #374785;
+  border-radius: 2.5px;
+  padding: 5px 15px;;
+}
+
+#submit:hover {
+  transition: background 0.3s;
+  background-color: #374785;
+  cursor: pointer;
+  }
+
+#submit:active {
+  transform: translateY(1px);
+}
+
+/*------ output -----*/
+
+#rightSide {
+  padding: 10px;
+  margin: 20px 0px 0px 20px;
+  border-left: 2px solid #F76D6D;
+  text-align: center;
+  width: 100%;
+  background-color: #F9F9F9;
+}
+
+#rightSide p {
+  margin: 0px;
+  color: gray;
+}

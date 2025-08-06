@@ -1,0 +1,168 @@
+.content {
+  display: flex;
+}
+
+/* Menu */
+.menu {
+  background-image: url('/images/menu.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 100vh;
+  border-right: 10px solid #6979B7;
+}
+
+.shop {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: -1px 15px 30px -12px #374785;
+  border-radius: 10px; 
+  margin: 50px 50px 50px 120px;
+  width: 80%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 2em;
+}
+.shop img {
+  width: 10%;
+}
+
+.rods {
+  display: flex;
+  margin: 50px 50px 50px 120px;
+  width: 80%;
+}
+.rod-card {
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: -1px 15px 30px -12px #374785;
+  border-radius: 10px; 
+  margin: 3% 3% 5% 3%;
+  width: 30%;
+  padding: 15px;
+  border: none;
+  font-size: 1.2vw;
+  text-align: center;
+}
+.rod-card p {
+  margin-bottom: 10px;
+}
+.rod-card img {
+  width: 80%;
+  padding: 10px;
+}
+.rods button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 1.2vw;
+  width: 100%;
+}
+.rods button img {
+  padding-left: 5px;
+  width: 2.5em;
+}
+
+#steel {
+  background-color: rgba(168,209,231,0.8);
+}
+#steel:hover {
+  background-color: rgba(168,209,231,0.3);
+  cursor: pointer;
+}
+#gold {
+  background-color: rgba(247,233,160,0.8);
+}
+#gold:hover {
+  background-color: rgba(247,233,160,0.3);
+  cursor: pointer;
+}
+#ruby {
+  background-color: rgba(247,109,109,0.8);
+}
+#ruby:hover {
+  background-color: rgba(247,109,109,0.3);
+  cursor: pointer;
+}
+
+/* Game */
+.game {
+  background-image: url('/images/ocean.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 50%;
+  height: 100vh;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+.fishDisplay {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 2em;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: -1px 15px 30px -12px #374785;
+  margin: 10% 60% 0 10%;
+  width: fit-content;
+}
+.fishDisplay img {
+  width: 1.5em;
+}
+
+.flexbox {
+  display: flex;
+  align-items: center;
+}
+.rodDisplay {
+  font-size: 1.5em;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: -1px 15px 30px -12px #374785;
+  margin: 5% 5% 0 10%;
+  width: 20%;
+  height: fit-content;
+}
+.rodDisplay img {
+  padding: 10px;
+  width: 80%;
+}
+
+#opt1, #opt2 {
+  display: none;
+}
+.options {
+  margin: 5% 2% 0 0;
+  align-items: center;
+}
+.game button {
+  font-size: 1.5em;
+  border: none;
+  border-radius: 10px;
+  padding: 20px;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: -1px 15px 30px -12px #374785;
+  transition: all 0.3s ease;
+  align-items: center;
+}
+.game button:active {
+  top: 2px;
+}
+.game button:hover {
+  box-shadow:
+   -7px -7px 20px 0px rgba(255, 255, 255, 0.1),
+   -4px -4px 5px 0px rgba(255, 255, 255, 0.1),
+   7px 7px 20px 0px #0002,
+   4px 4px 5px 0px #0001;
+  transition: all 0.3s ease;
+}

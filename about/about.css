@@ -1,0 +1,33 @@
+.content {
+  display: block;
+}
+
+hr {
+  margin: 20px 0;
+  border-top: 1px dashed white;
+  border-bottom: none;
+}
+.card {
+  background-color: rgba(255, 255, 255, 0.2);
+	margin: 30px 30px 50px 90px;
+  padding: 20px;
+  border-radius: 15px;
+  line-height: 2;
+}
+
+.flexbox {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.card img {
+  object-fit: contain;
+  width: 10%;
+}
+
+
+.type img {
+  object-fit: contain;
+  width: 3%;
+}
